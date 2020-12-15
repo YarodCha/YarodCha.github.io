@@ -1,0 +1,56 @@
+footer {
+  padding: 1.5rem;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  background-color: #011638;
+}
+
+nav {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.agradecimiento {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 0.8rem;
+  margin-bottom: 0;
+  line-height: 23px;
+}
+
+a {
+  color: #bdd4e7;
+  margin-left: 2rem;
+  text-decoration: none;
+}
+
+a:hover {
+  color: #ff8585;
+}
+
+.activeLink {
+  color: #ff8585;
+}
+
+@media (max-width: 425px) {
+  a {
+    margin-top: 0.5rem;
+    margin-left: 0.8rem;
+  }
+  .agradecimiento {
+    margin-top: 1rem;
+    font-size: 0.6rem;
+  }
+  footer {
+    padding: 0.8rem;
+  }
+}
+
+@media (max-width: 768px) {
+  footer {
+    justify-content: center;
+  }
+  .agradecimiento {
+    margin-top: 1rem;
+  }
+}

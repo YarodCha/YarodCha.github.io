@@ -1,0 +1,45 @@
+.home {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.contenedor {
+  text-align: center;
+  padding: 1rem;
+}
+
+button {
+  cursor: pointer;
+  padding: 0.8rem 1.2rem;
+  color: white;
+  background-color: transparent;
+  outline: white;
+  border-style: solid;
+  border-color: white;
+  font-size: 1rem;
+  border-radius: 5px;
+  font-family: 'Courier New', Courier, monospace;
+  transition: 0.2s;
+  margin-top: 2rem;
+}
+
+button:hover {
+  box-shadow: 5px 5px 5px black;
+}
+
+button:active {
+  transform: scale(0.8);
+}
+
+@media (min-width: 768px) {
+  .contenedor {
+    padding: 1rem 5rem;
+  }
+}
+
+@media (min-width: 1024px) {
+  .contenedor {
+    padding: 1rem 10rem;
+  }
+}
