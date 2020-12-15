@@ -12,7 +12,12 @@
         },
         {
             "title": "Subhunter Game",
-            "link": "https://dchamelybaby.com/",
+            "link": "https://github.com/YarodCha/Sub-Hunter",
+            "languages": "JavaScript,ReactJs"
+        },
+        {
+            "title": "React e-commerce",
+            "link": "https://react-ecommerce-yarod.netlify.app/",
             "languages": "JavaScript,ReactJs"
         }
     ]

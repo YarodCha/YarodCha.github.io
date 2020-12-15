@@ -1,30 +1,10 @@
-import React from 'react';
-
 export default function About() {
+  const age = new Date().getUTCFullYear() - 1997;
   return (
     <div>
       <h1>About me</h1>
-      <Caja text="JAJA"></Caja>
+      <p>I'm {age} years old.</p>
+      <p> I ❤ JS</p>
     </div>
   );
-}
-
-
-
-class Caja extends React.Component {
-  constructor(props) {
-    super(props);
-    this.state = {
-      time: new Date().toLocaleDateString(),
-    };
-  }
-
-  render() {
-    return (
-      <div>
-        {this.state.time}
-        <p> {this.props.text} </p>
-      </div>
-    );
-  }
 }
