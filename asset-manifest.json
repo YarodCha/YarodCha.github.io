@@ -1,23 +1,22 @@
 {
   "files": {
-    "main.css": "/YarodCha.github.io/static/css/main.237bc7d1.chunk.css",
-    "main.js": "/YarodCha.github.io/static/js/main.fa82efd0.chunk.js",
-    "main.js.map": "/YarodCha.github.io/static/js/main.fa82efd0.chunk.js.map",
-    "runtime-main.js": "/YarodCha.github.io/static/js/runtime-main.8d971595.js",
-    "runtime-main.js.map": "/YarodCha.github.io/static/js/runtime-main.8d971595.js.map",
-    "static/js/2.719e2c6e.chunk.js": "/YarodCha.github.io/static/js/2.719e2c6e.chunk.js",
-    "static/js/2.719e2c6e.chunk.js.map": "/YarodCha.github.io/static/js/2.719e2c6e.chunk.js.map",
-    "static/js/3.7a048c84.chunk.js": "/YarodCha.github.io/static/js/3.7a048c84.chunk.js",
-    "static/js/3.7a048c84.chunk.js.map": "/YarodCha.github.io/static/js/3.7a048c84.chunk.js.map",
+    "main.css": "/YarodCha.github.io/static/css/main.c500bacb.chunk.css",
+    "main.js": "/YarodCha.github.io/static/js/main.2bf273b1.chunk.js",
+    "main.js.map": "/YarodCha.github.io/static/js/main.2bf273b1.chunk.js.map",
+    "runtime-main.js": "/YarodCha.github.io/static/js/runtime-main.8435825d.js",
+    "runtime-main.js.map": "/YarodCha.github.io/static/js/runtime-main.8435825d.js.map",
+    "static/js/2.7e404f43.chunk.js": "/YarodCha.github.io/static/js/2.7e404f43.chunk.js",
+    "static/js/2.7e404f43.chunk.js.map": "/YarodCha.github.io/static/js/2.7e404f43.chunk.js.map",
+    "static/js/3.4dc8135b.chunk.js": "/YarodCha.github.io/static/js/3.4dc8135b.chunk.js",
+    "static/js/3.4dc8135b.chunk.js.map": "/YarodCha.github.io/static/js/3.4dc8135b.chunk.js.map",
     "index.html": "/YarodCha.github.io/index.html",
-    "static/css/main.237bc7d1.chunk.css.map": "/YarodCha.github.io/static/css/main.237bc7d1.chunk.css.map",
-    "static/js/2.719e2c6e.chunk.js.LICENSE.txt": "/YarodCha.github.io/static/js/2.719e2c6e.chunk.js.LICENSE.txt",
-    "static/media/index.css": "/YarodCha.github.io/static/media/wall-wallpaper-concrete-colored-painted-textured-concept.65ca01c0.jpg"
+    "static/css/main.c500bacb.chunk.css.map": "/YarodCha.github.io/static/css/main.c500bacb.chunk.css.map",
+    "static/js/2.7e404f43.chunk.js.LICENSE.txt": "/YarodCha.github.io/static/js/2.7e404f43.chunk.js.LICENSE.txt"
   },
   "entrypoints": [
-    "static/js/runtime-main.8d971595.js",
-    "static/js/2.719e2c6e.chunk.js",
-    "static/css/main.237bc7d1.chunk.css",
-    "static/js/main.fa82efd0.chunk.js"
+    "static/js/runtime-main.8435825d.js",
+    "static/js/2.7e404f43.chunk.js",
+    "static/css/main.c500bacb.chunk.css",
+    "static/js/main.2bf273b1.chunk.js"
   ]
 }
