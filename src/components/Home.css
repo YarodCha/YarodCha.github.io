@@ -5,6 +5,10 @@
   text-align: center;
 }
 
+#myName {
+  color: var(--selected-accent-color);
+}
+
 .contenedor {
   text-align: center;
   padding: 1rem;
@@ -13,14 +17,14 @@
 button {
   cursor: pointer;
   padding: 0.8rem 1.2rem;
-  color: white;
+  color: var(--selected-text-color);
   background-color: transparent;
-  outline: white;
+  outline: var(--selected-text-color);
   border-style: solid;
-  border-color: white;
+  border-color: var(--selected-text-color);
   font-size: 1rem;
   border-radius: 5px;
-  font-family: 'Courier New', Courier, monospace;
+  font-family: monospace;
   transition: 0.2s;
   margin-top: 2rem;
 }
@@ -31,6 +35,10 @@ button:hover {
 
 button:active {
   transform: scale(0.8);
+}
+
+main a {
+  color: var(--selected-main-link-color);
 }
 
 @media (min-width: 768px) {

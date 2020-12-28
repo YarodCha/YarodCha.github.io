@@ -3,7 +3,7 @@ footer {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
-  background-color: #011638;
+  background-color: var(--nav-background-color);
 }
 
 nav {
@@ -19,17 +19,17 @@ nav {
 }
 
 a {
-  color: #bdd4e7;
+  color: var(--dark-link-color);
   margin-left: 2rem;
   text-decoration: none;
 }
 
 a:hover {
-  color: #ff8585;
+  color: var(--hover-color);
 }
 
 .activeLink {
-  color: #ff8585;
+  color: var(--hover-color);
 }
 
 @media (max-width: 425px) {
@@ -53,4 +53,8 @@ a:hover {
   .agradecimiento {
     margin-top: 1rem;
   }
+}
+
+.dark-mode {
+  color: white;
 }

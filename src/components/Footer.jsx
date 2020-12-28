@@ -1,7 +1,17 @@
 import './Footer.css';
 
 import { NavLink } from 'react-router-dom';
+import { useState } from 'react';
 export default function Footer() {
+  const [darkMode, setDarkMode] = useState(window.matchMedia('(prefers-color-scheme: dark)').matches)
+  
+  function handleChangeDarkMode() {
+    !darkMode ?
+            document.body.className = 'is-dark-mode' :
+            document.body.className = ''
+    setDarkMode(!darkMode)
+  }
+
   return (
     <footer>
       <nav>
@@ -10,14 +20,15 @@ export default function Footer() {
         <NavLink activeClassName="activeLink" to="/portfolio">PORTFOLIO</NavLink>
         <NavLink activeClassName="activeLink" to="/contact">CONTACT</NavLink>
       </nav>
-      <a
-        target="_blank"
-        rel="noreferrer"
-        className="agradecimiento"
-        href="https://www.freepik.com/photos/background"
-      >
-        Background photo created by rawpixel.com - www.freepik.com
-      </a>
+      <div className="dark-mode">
+        <input type="checkbox" 
+          className="checkbox" 
+          name="theme" 
+          id="theme"
+          checked={darkMode}
+          onChange={handleChangeDarkMode} />
+        <label htmlFor="theme" className="switch"> Dark mode</label>
+      </div>
     </footer>
   );
 }

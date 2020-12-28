@@ -7,7 +7,7 @@ export default function Portfolio() {
       <h1>Portfolio</h1>
       <ul>
         {projects.map((project) => (
-          <div>
+          <li key={project.title} >
             <a
               key={project.title}
               href={project.link}
@@ -17,7 +17,7 @@ export default function Portfolio() {
               {project.title}
             </a>
             <small> {project.languages.replace(",", ", ")} </small>
-          </div>
+          </li>
         ))}
       </ul>
     </div>

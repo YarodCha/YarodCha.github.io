@@ -3,9 +3,48 @@
   margin: 0;
 }
 
+:root {
+  --dark-background-color: #01345f;
+  --light-background-color: #ffffff;
+  --dark-text-color: #ffffff;
+  --light-text-color: #000000;
+  --dark-accent-color: #ffb42b;
+  --light-accent-color: #ea0101;
+  --hover-color: #ff8585;
+  --dark-link-color: #bdd4e7;
+  --light-link-color: #0059a2;
+  --nav-background-color: #011638;
+  --selected-background-color: var(--light-background-color);
+  --selected-text-color: var(--light-text-color);
+  --selected-main-link-color: var(--light-link-color);
+  --selected-accent-color: var(--light-accent-color);
+}
+
 body {
-  background-image: url('assets/wall-wallpaper-concrete-colored-painted-textured-concept.jpg');
-  color: white;
   font-size: 20px;
-  font-family: 'Courier New', Courier, monospace;
+  font-family: monospace;
+  background-color: var(--selected-background-color);
+  color: var(--selected-text-color);
+}
+
+@supports (background: paint(something)) {
+  main {
+    --extra-sparkleNumber: 120;
+    --extra-sparkleHue: 180;
+    --extra-sparkleHeightVariance: 12;
+    --extra-sparkleWidthVariance: 15;
+    --extra-sparkleWeightVariance: 3;
+    background: paint(extra-sparkles);
+  }
+}
+
+.is-dark-mode {
+  --selected-text-color: var(--dark-text-color);
+  --selected-background-color: var(--dark-background-color);
+  --selected-main-link-color: var(--dark-link-color);
+  --selected-accent-color: var(--dark-accent-color);
+}
+
+li {
+  list-style: none;
 }

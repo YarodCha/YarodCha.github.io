@@ -15,8 +15,8 @@ import './App.css'
 export default function App() {
   return (
     <Router>
-      <main className="container">
-        <div className="home">
+      <div className="container">
+        <main className="home">
           <Switch>
             <Route path="/about">
               <About />
@@ -31,9 +31,9 @@ export default function App() {
               <Home />
             </Route>
           </Switch>
-        </div>
+        </main>
         <Footer></Footer>
-      </main>
+      </div>
     </Router>
   )
 }
