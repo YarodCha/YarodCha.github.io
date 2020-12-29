@@ -36,6 +36,17 @@ body {
     --extra-sparkleWeightVariance: 3;
     background: paint(extra-sparkles);
   }
+  
+  @media (max-width: 768px) {
+    main {
+      --extra-sparkleNumber: 60;
+    }
+  }
+  @media (max-width: 425px) {
+    main {
+      --extra-sparkleNumber: 30;
+    }
+  }
 }
 
 .is-dark-mode {

@@ -32,6 +32,15 @@ a:hover {
   color: var(--hover-color);
 }
 
+@media (max-width: 768px) {
+  footer {
+    justify-content: center;
+  }
+  .agradecimiento {
+    margin-top: 1rem;
+  }
+}
+
 @media (max-width: 425px) {
   a {
     margin-top: 0.5rem;
@@ -44,14 +53,8 @@ a:hover {
   footer {
     padding: 0.8rem;
   }
-}
-
-@media (max-width: 768px) {
-  footer {
-    justify-content: center;
-  }
-  .agradecimiento {
-    margin-top: 1rem;
+  .dark-mode {
+    display: none;
   }
 }
 
