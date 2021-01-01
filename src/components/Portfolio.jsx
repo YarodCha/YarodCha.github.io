@@ -3,8 +3,10 @@ import data from '../assets/data.json';
 
 export default function Portfolio() {
   let projects = data.projects;
+  const mediaQuery = window.matchMedia('(max-width: 400px)');
 
   function generateProjectListElement(project) {
+    const listLanguages = project.languages.split(',');
     return (
       <li key={project.title}>
         {project.link.startsWith('http') ? (
@@ -14,7 +16,12 @@ export default function Portfolio() {
         ) : (
           <Link to={project.link}> {project.title} </Link>
         )}
-        <small> {project.languages.replace(/,/g, ', ')} </small>
+        <small>
+          {' '}
+          {mediaQuery.matches
+            ? listLanguages[listLanguages.length - 1]
+            : project.languages.replace(/,/g, ', ')}
+        </small>
       </li>
     );
   }
