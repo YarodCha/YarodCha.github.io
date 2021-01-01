@@ -19,6 +19,16 @@
             "title": "React e-commerce",
             "link": "https://react-ecommerce-yarod.netlify.app/",
             "languages": "JavaScript,ReactJs"
+        },
+        {
+            "title": "Github Cards App",
+            "link": "/GithubCardsApp",
+            "languages": "JavaScript,ReactJs"
+        },
+        {
+            "title": "Star Match Game",
+            "link": "/StarMatchGame",
+            "languages": "JavaScript,ReactJs"
         }
     ]
 }

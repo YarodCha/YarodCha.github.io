@@ -1,5 +1,5 @@
 import './Home.css';
-import { NavLink } from 'react-router-dom';
+import { Link } from 'react-router-dom';
 export default function Home() {
   return (
     <div className="contenedor">
@@ -10,13 +10,12 @@ export default function Home() {
         </span>
         . I'm a full-stack javascript developer
       </h1>
-      <NavLink
-        activeClassName="activeLink"
+      <Link
         to="/portfolio"
         style={{ margin: '0px' }}
       >
-        <button onClick={() => console.log('click')}>View my work -&gt;</button>
-      </NavLink>
+        <button>View my work -&gt;</button>
+      </Link>
     </div>
   );
 }

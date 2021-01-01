@@ -11,6 +11,8 @@ import {
 } from "react-router-dom";
 
 import './App.css'
+import GithubCardsApp from './pages/GithubCardsApp'
+import StarMatchGame from './pages/StarMatchGame'
 
 export default function App() {
   return (
@@ -26,6 +28,12 @@ export default function App() {
             </Route>
             <Route path="/contact">
               <Contact />
+            </Route>
+            <Route path="/GithubCardsApp">
+              <GithubCardsApp />
+            </Route>
+            <Route path="/StarMatchGame">
+              <StarMatchGame />
             </Route>
             <Route path="/">
               <Home />

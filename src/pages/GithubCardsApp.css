@@ -1,0 +1,24 @@
+.github-profile {
+    display: flex;
+    margin-top: 20px;
+    background-color: #181515;
+    padding: 5px;
+    border-radius: 5px;
+}
+.info {
+    margin-left: 10px;
+    text-align: left;
+}
+.name {
+    font-weight: bold;
+}
+
+input {
+    padding: 0.8rem;
+    font-size: 1rem;
+}
+
+.button {
+    background-color: black;
+    font-weight: bold;
+}
