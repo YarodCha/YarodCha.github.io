@@ -26,6 +26,11 @@
             "languages": "JavaScript,ReactJs"
         },
         {
+            "title": "Build a bot",
+            "link": "https://yarodcha.github.io/build-a-bot/",
+            "languages": "JavaScript,Vue.js"
+        },
+        {
             "title": "Star Match Game",
             "link": "/StarMatchGame",
             "languages": "JavaScript,ReactJs"

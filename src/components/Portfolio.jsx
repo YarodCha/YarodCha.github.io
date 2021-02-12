@@ -3,7 +3,7 @@ import data from '../assets/data.json';
 
 export default function Portfolio() {
   let projects = data.projects;
-  const mediaQuery = window.matchMedia('(max-width: 400px)');
+  const mediaQuery = window.matchMedia('(max-width: 420px)');
 
   function generateProjectListElement(project) {
     const listLanguages = project.languages.split(',');
