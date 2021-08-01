@@ -13,6 +13,7 @@ import {
 import './App.css'
 import GithubCardsApp from './pages/GithubCardsApp'
 import StarMatchGame from './pages/StarMatchGame'
+import SuperGachaGame from './pages/SuperGachaGame'
 
 export default function App() {
   return (
@@ -34,6 +35,9 @@ export default function App() {
             </Route>
             <Route path="/StarMatchGame">
               <StarMatchGame />
+            </Route>
+            <Route path="/SuperGachaGame">
+              <SuperGachaGame />
             </Route>
             <Route path="/">
               <Home />

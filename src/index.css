@@ -14,10 +14,13 @@
   --dark-link-color: #bdd4e7;
   --light-link-color: #0059a2;
   --nav-background-color: #011638;
+  --dark-main-green: #00ff00;
+  --light-main-green: #008000;
   --selected-background-color: var(--light-background-color);
   --selected-text-color: var(--light-text-color);
   --selected-main-link-color: var(--light-link-color);
   --selected-accent-color: var(--light-accent-color);
+  --selected-main-green-color: var(--light-main-green);
 }
 
 body {
@@ -54,8 +57,9 @@ body {
   --selected-background-color: var(--dark-background-color);
   --selected-main-link-color: var(--dark-link-color);
   --selected-accent-color: var(--dark-accent-color);
+  --selected-main-green-color: var(--dark-main-green);
 }
 
-li {
+footer li {
   list-style: none;
 }

@@ -1,5 +1,5 @@
-import { useEffect, useState } from 'react';
-import './StarMatchGame.css';
+import { useEffect, useState } from "react";
+import "./StarMatchGame.css";
 
 const useGameState = () => {
   const [stars, setStars] = useState(utils.random(1, 9));
@@ -16,9 +16,9 @@ const useGameState = () => {
         clearTimeout(timerId);
       };
     }
-    console.log('Rendering');
+    console.log("Rendering");
     return () => {
-      console.log('Destroying');
+      console.log("Destroying");
     };
   });
 
@@ -44,7 +44,7 @@ const useGameState = () => {
   };
 };
 
-const Game = (props) => {  
+const Game = (props) => {
   const {
     stars,
     availableNumbers,
@@ -56,28 +56,28 @@ const Game = (props) => {
   const candidatesAreWrong = utils.sum(candidateNumbers) > stars;
   const gameStatus =
     availableNumbers.length === 0
-      ? 'won'
+      ? "won"
       : secondsLeft === 0
-      ? 'lost'
-      : 'active';
+      ? "lost"
+      : "active";
 
   const numberStatus = (number) => {
     if (!availableNumbers.includes(number)) {
-      return 'used';
+      return "used";
     }
     if (candidateNumbers.includes(number)) {
-      return candidatesAreWrong ? 'wrong' : 'candidate';
+      return candidatesAreWrong ? "wrong" : "candidate";
     }
-    return 'available';
+    return "available";
   };
 
   const onNumberClick = (number, currentStatus) => {
-    if (gameStatus !== 'active' || currentStatus === 'used') {
+    if (gameStatus !== "active" || currentStatus === "used") {
       return;
     }
 
     const newCandidateNumbers =
-      currentStatus === 'available'
+      currentStatus === "available"
         ? candidateNumbers.concat(number)
         : candidateNumbers.filter((num) => num !== number);
 
@@ -92,7 +92,7 @@ const Game = (props) => {
       </div>
       <div className="body">
         <div className="left">
-          {gameStatus !== 'active' ? (
+          {gameStatus !== "active" ? (
             <PlayAgain onClick={props.startNewGame} gameStatus={gameStatus} />
           ) : (
             <StarsDisplay count={stars} />
@@ -119,9 +119,11 @@ const PlayAgain = ({ onClick, gameStatus }) => {
     <div className="game-done">
       <div
         className="message"
-        style={{ color: gameStatus === 'won' ? 'green' : 'red' }}
+        style={{
+          color: gameStatus === "won" ? "var(--selected-main-green-color)" : "red",
+        }}
       >
-        {gameStatus === 'won' ? 'Nice' : 'Game Over'}
+        {gameStatus === "won" ? "Nice" : "Game Over"}
       </div>
       <button onClick={() => onClick()}>Play again</button>
     </div>
@@ -159,10 +161,10 @@ export default StarMatchGame;
 
 // Color Theme
 const colors = {
-  available: 'lightgray',
-  used: 'lightgreen',
-  wrong: 'lightcoral',
-  candidate: 'deepskyblue',
+  available: "lightgray",
+  used: "lightgreen",
+  wrong: "lightcoral",
+  candidate: "deepskyblue",
 };
 
 // Math science

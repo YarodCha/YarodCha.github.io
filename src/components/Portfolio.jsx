@@ -1,15 +1,15 @@
-import { Link } from 'react-router-dom';
-import data from '../assets/data.json';
+import { Link } from "react-router-dom";
+import data from "../assets/data.json";
 
 export default function Portfolio() {
   let projects = data.projects;
-  const mediaQuery = window.matchMedia('(max-width: 420px)');
+  const mediaQuery = window.matchMedia("(max-width: 420px)");
 
   function generateProjectListElement(project) {
-    const listLanguages = project.languages.split(',');
+    const listLanguages = project.languages.split(",");
     return (
       <li key={project.title}>
-        {project.link.startsWith('http') ? (
+        {project.link.startsWith("http") ? (
           <a href={project.link} target="_blank" rel="noopener noreferrer">
             {project.title}
           </a>
@@ -17,10 +17,10 @@ export default function Portfolio() {
           <Link to={project.link}> {project.title} </Link>
         )}
         <small>
-          {' '}
+          {" "}
           {mediaQuery.matches
             ? listLanguages[listLanguages.length - 1]
-            : project.languages.replace(/,/g, ', ')}
+            : project.languages.replace(/,/g, ", ")}
         </small>
       </li>
     );
@@ -29,7 +29,9 @@ export default function Portfolio() {
   return (
     <div>
       <h1>Portfolio</h1>
-      <ul>{projects.map(generateProjectListElement)}</ul>
+      <ul style={{ textAlign: "left" }}>
+        {projects.map(generateProjectListElement)}
+      </ul>
     </div>
   );
 }

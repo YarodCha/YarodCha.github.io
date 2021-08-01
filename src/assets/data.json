@@ -34,6 +34,11 @@
             "title": "Star Match Game",
             "link": "/StarMatchGame",
             "languages": "JavaScript,ReactJs"
+        },
+        {
+            "title": "Super Gacha Game",
+            "link": "/SuperGachaGame",
+            "languages": "JavaScript,ReactJs"
         }
     ]
 }
